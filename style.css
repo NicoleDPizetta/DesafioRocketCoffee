@@ -15,6 +15,58 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   background-color: var(--backgrond);
   font-family: "Manrope", sans-serif;
 }
+
+/* --------------- NAVBAR / MENU HAMBURGER ICON --------------- */
+.navbar {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid var(--border);
+}
+
+#labelDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+#logo {
+  width: auto;
+  height: 40px;
+}
+
+.navbar #menuLinks {
+  display: none;
+}
+
+.navbar #menuLinks a {
+  color: var(--text-color-menu-mobile);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  border-bottom: 1px solid var(--border);
+}
+
+#menuBurger {
+  width: 30px;
+  height: 30px;
+  text-align: right;
+}
+
+#menuBurger::after {
+  width: 30px;
+  height: 30px;
+  text-align: right;
+}
+
+#menuBurger {
+  transition: 0.5s ease-in-out;
+}
+
+/* --------------- BODY --------------- */

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
     <title>RocketCoffee - Desafio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,5 +16,42 @@
     />
   </head>
 
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div id="labelDiv">
+          <img
+            id="logo"
+            src="./assets/logo-mobile.svg"
+            alt="Logotipo da Rocketseat"
+          />
+
+          <input
+            type="checkbox"
+            id="checkboxMenu"
+            style="display: none"
+            onclick="showMenu(), changeMenuIcon()"
+          />
+          <label for="checkboxMenu">
+            <img
+              id="menuBurger"
+              class="changeMenuIcon"
+              src="./assets/menu-buguer-open.svg"
+              alt="menu hamburger"
+            />
+          </label>
+        </div>
+
+        <div id="menuLinks">
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Recompensas</a>
+          <a href="#">Gift Cards</a>
+          <a href="#">Lojas</a>
+        </div>
+
+        <!-- <button type="button">PEGAR MEU CAFÉ</button> -->
+      </nav>
+    </header>
+  </body>
 </html>
