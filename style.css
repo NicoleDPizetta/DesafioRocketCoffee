@@ -14,9 +14,12 @@
   --text-color-menu-mobile: #e1e1e6;
 }
 
+html,
 body {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+  overflow: hidden;
+  height: 100%;
   font-family: "Manrope", sans-serif;
   background: var(--backgrond) url(./assets/blur-mobile.png) no-repeat bottom;
 }
@@ -40,6 +43,7 @@ body {
 
 .navbar #menuLinks {
   display: none;
+  margin-top: 50px;
   height: 100vh;
   background-color: var(--backgrond);
 }
@@ -67,16 +71,14 @@ body {
 
 #heroSection {
   display: contents;
-  width: 100vw;
-  height: 100vh;
 }
 
 #heroDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  row-gap: 50px;
+  justify-content: space-between;
+  row-gap: 75px;
 }
 
 #heroSection h1 {
@@ -84,28 +86,30 @@ body {
   font-size: 30px;
   font-weight: 700;
   text-align: center;
-  margin: 10px 5px;
+  position: relative;
+  margin: 80px 25px 10px 25px;
+}
+
+#texts {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin: 2px;
 }
 
 #textGreatCoffe {
-  font-size: 50px;
   color: var(--text-color);
-  font-weight: 700;
-  text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #textCode {
-  font-size: 50px;
-  font-weight: 700;
-  text-align: center;
   text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
     -1px 1px 0 var(--button), 1px 1px 0 var(--button);
 }
 
-#heroSection img {
+#rocketCoffe {
   width: 98%;
-  position: bottom center;
+  position: bottom;
 }
 
 /* --------------- BUTTON Coffee --------------- */
@@ -119,4 +123,8 @@ body {
   color: var(--text-color);
   border: 1px solid var(--button);
   border-radius: 6px;
+}
+
+#button:hover {
+  background-color: var(--button);
 }
