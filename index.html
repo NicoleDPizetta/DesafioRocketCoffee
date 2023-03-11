@@ -18,40 +18,68 @@
 
   <body>
     <header>
-      <nav class="navbar">
-        <div id="labelDiv">
-          <img
-            id="logo"
-            src="./assets/logo-mobile.svg"
-            alt="Logotipo da Rocketseat"
-          />
-
-          <input
-            type="checkbox"
-            id="checkboxMenu"
-            style="display: none"
-            onclick="showMenu(), changeMenuIcon()"
-          />
-          <label for="checkboxMenu">
+      <span>
+        <nav class="navbar">
+          <div id="labelDiv">
             <img
-              id="menuBurger"
-              class="changeMenuIcon"
-              src="./assets/menu-buguer-open.svg"
-              alt="menu hamburger"
+              id="logo"
+              src="./assets/logo-mobile.svg"
+              alt="Logotipo da Rocketseat"
             />
-          </label>
-        </div>
 
-        <div id="menuLinks">
-          <a href="#">Home</a>
-          <a href="#">Menu</a>
-          <a href="#">Recompensas</a>
-          <a href="#">Gift Cards</a>
-          <a href="#">Lojas</a>
-        </div>
+            <input
+              type="checkbox"
+              id="checkboxMenu"
+              style="display: none"
+              onclick="showMenu(), changeMenuIcon()"
+            />
+            <label for="checkboxMenu">
+              <img
+                id="menuBurger"
+                class="changeMenuIcon"
+                src="./assets/menu-buguer-open.svg"
+                alt="menu hamburger"
+              />
+            </label>
+          </div>
 
-        <!-- <button type="button">PEGAR MEU CAFÉ</button> -->
-      </nav>
+          <div id="menuLinks">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Recompensas</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Lojas</a>
+          </div>
+        </nav>
+      </span>
     </header>
+
+    <section id="heroSection">
+      <div id="heroDiv">
+        <h1 id="title">
+          O café que fará seu código decolar para o próximo nível.
+        </h1>
+
+        <button id="button" type="button">
+          PEGAR MEU CAFÉ
+          <img
+            id="arrowButton"
+            style="height: 12px; width: 12px"
+            src="./assets/arrow.svg"
+            alt="seta para a direita"
+          />
+        </button>
+
+        <div>
+          <p id="textGreatCoffe">Great Coffee</p>
+          <p id="textCode">&lt;Great Code/&gt;</p>
+        </div>
+
+        <img
+          src="./assets/rocket-coffee.png"
+          alt="Imagem ilustrativas do café RocketCoffee"
+        />
+      </div>
+    </section>
   </body>
 </html>

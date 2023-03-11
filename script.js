@@ -12,7 +12,9 @@ function changeMenuIcon() {
 
   if (checked == true) {
     menuBurger.setAttribute("src", "./assets/menu-buguer-close.svg");
+    heroSection.style.display = "none";
   } else {
     menuBurger.setAttribute("src", "./assets/menu-buguer-open.svg");
+    heroSection.style.display = "contents";
   }
 }

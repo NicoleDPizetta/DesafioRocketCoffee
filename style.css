@@ -19,6 +19,7 @@ body {
   height: 100vh;
   background-color: var(--backgrond);
   font-family: "Manrope", sans-serif;
+  background-image: url(./assets/blur-mobile.png) no-repeat bottom center;
 }
 
 /* --------------- NAVBAR / MENU HAMBURGER ICON --------------- */
@@ -42,6 +43,8 @@ body {
 
 .navbar #menuLinks {
   display: none;
+  height: 100vh;
+  background-color: var(--backgrond);
 }
 
 .navbar #menuLinks a {
@@ -53,20 +56,74 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+#menuLinks a:active {
+  border-left: 5px solid var(--button);
+}
+
 #menuBurger {
   width: 30px;
   height: 30px;
   text-align: right;
 }
 
-#menuBurger::after {
-  width: 30px;
-  height: 30px;
-  text-align: right;
+/* --------------- HERO SECTION --------------- */
+
+#heroSection {
+  display: contents;
+  width: 100vw;
+  height: 100vh;
 }
 
-#menuBurger {
-  transition: 0.5s ease-in-out;
+#heroDiv {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
 }
 
-/* --------------- BODY --------------- */
+#heroSection h1 {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#textGreatCoffe {
+  font-size: 50px;
+  color: var(--text-color);
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#textCode {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  /* color: var(--backgrond); */
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+#heroSection img {
+  width: 95%;
+  height: auto;
+  position: absolute bottom center;
+}
+
+/* --------------- BUTTON Coffee --------------- */
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 10px;
+  background-color: var(--backgrond);
+  color: var(--text-color);
+  border: 1px solid var(--button);
+  border-radius: 6px;
+}
