@@ -17,15 +17,12 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: var(--backgrond);
   font-family: "Manrope", sans-serif;
-  background-image: url(./assets/blur-mobile.png) no-repeat bottom center;
+  background: var(--backgrond) url(./assets/blur-mobile.png) no-repeat bottom;
 }
 
 /* --------------- NAVBAR / MENU HAMBURGER ICON --------------- */
 .navbar {
-  width: 100%;
-  height: 60px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -75,9 +72,6 @@ body {
 }
 
 #heroDiv {
-  width: 100vw;
-  height: 100vh;
-  padding: 0 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,6 +84,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+  margin: 10px 5px;
 }
 
 #textGreatCoffe {
@@ -104,15 +99,13 @@ body {
   font-size: 50px;
   font-weight: 700;
   text-align: center;
-  /* color: var(--backgrond); */
   text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
     -1px 1px 0 var(--button), 1px 1px 0 var(--button);
 }
 
 #heroSection img {
-  width: 95%;
-  height: auto;
-  position: absolute bottom center;
+  width: 98%;
+  position: bottom center;
 }
 
 /* --------------- BUTTON Coffee --------------- */
